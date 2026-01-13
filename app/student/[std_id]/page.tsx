@@ -4,9 +4,9 @@ interface PageParams {
   };
 }
 
-export default function Student({ params }: PageParams) {
+export default async function Student({ params }: PageParams) {
   // เอาข้อมูลที่ส่งมาเก็บในตัวแปรเพื่อใช้ใน Component
-  const { stdId } = params;
+  const { stdId } = await params;
 
   return (
     <>
